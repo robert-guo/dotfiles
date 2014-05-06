@@ -226,7 +226,7 @@ else
     endif
 endif
 
-
+set noautochdir
 set backspace=2              " 设置退格键可用
 set autoindent               " 自动对齐
 set ai!                      " 设置自动缩进
@@ -240,7 +240,6 @@ set hlsearch                 " 开启高亮显示结果
 set nowrapscan               " 搜索到文件两端时不重新搜索
 set nocompatible             " 关闭兼容模式
 set hidden                   " 允许在有未保存的修改时切换缓冲区
-set autochdir                " 设定文件浏览器目录为当前目录
 set foldmethod=syntax        " 选择代码折叠类型
 set foldlevel=100            " 禁止自动折叠
 set laststatus=2             " 开启状态栏信息
@@ -761,7 +760,6 @@ let g:ctrlp_custom_ignore = {
             \ 'dir': '\v[\/]\.(git)$',
             \ 'file':'\v\.(log|jpg|png|jpeg)$',
             \ }
-
 """""""""""""""""""""""""""""""""""""""""""""""
 "           Emmet
 """""""""""""""""""""""""""""""""""""""""""""""
