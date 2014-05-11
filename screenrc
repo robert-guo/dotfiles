@@ -1,4 +1,5 @@
 escape ``
+escape `e
 termcapinfo xterm* ti@:te@
 startup_message off
 defutf8 on
@@ -35,5 +36,6 @@ bindkey ^K kill
 bindkey ^O only
 
 defscrollback 30000
-
-caption always "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{kG}%C%A , %Y-%m-%d"
+hardstatus alwayslastline
+hardstatus string "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{kG}%C%A , %Y-%m-%d"
+#caption always "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{kG}%C%A , %Y-%m-%d"
