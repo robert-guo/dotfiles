@@ -14,3 +14,6 @@ git submodule init
 
 git submodule update
 
+njucs-427-hh
+njucs-427-gy
+njucs-427-ftp
